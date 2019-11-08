@@ -156,6 +156,19 @@ class Youtube
         return $this->decodeSingle($apiData);
     }
 
+    public function getVideoList($params, $part = ['id', 'snippet', 'contentDetails', 'player', 'statistics', 'status'])
+    {
+        $API_URL = $this->getApi('videos.list');
+
+        $apiData = $this->api_get($API_URL, $params);
+
+        if (is_array($vId)) {
+            return $this->decodeMultiple($apiData);
+        }
+
+        return $this->decodeSingle($apiData);
+    }
+    
     /**
      * Gets popular videos for a specific region (ISO 3166-1 alpha-2)
      *
