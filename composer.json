@@ -3,7 +3,7 @@
   "description": "Laravel PHP Facade/Wrapper for the Youtube Data API v3",
   "keywords": ["youtube", "api", "video", "laravel", "alaouy"],
   "require": {
-    "php": "^7.0|^8.1"
+    "php": "^7.0|^8"
   },
   "require-dev": {
     "phpunit/phpunit": "^6.1"
